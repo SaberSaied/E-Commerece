@@ -119,10 +119,10 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/50 scroll-smooth;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[#0D0D0D] text-[#F5F5F3];
   }
   html {
     @apply font-sans;
@@ -131,6 +131,10 @@
 
 .glassy {
   @apply text-foreground bg-transparent bg-gradient-to-tr from-background/60 to-foreground/10 border border-foreground/30 backdrop-blur-xs;
+}
+
+.title {
+  @apply text-4xl mb-10 mt-60 text-center;
 }
 
 .hero {
@@ -150,6 +154,20 @@
   background: linear-gradient(to bottom, transparent, var(--background));
   position: absolute;
   bottom: 0;
+}
+
+.collection-img::before {
+  content: '';
+  @apply absolute bottom-0 w-full h-0 z-0 transition-all duration-1000 ease-in-out;
+  background: linear-gradient(to bottom, transparent, var(--background));
+}
+
+.collection-card:hover .collection-img {
+  @apply grayscale-0 scale-105;
+}
+
+.collection-card:hover .collection-img::before {
+  @apply h-[20%] z-10;
 }
 
 .fade-in-up {

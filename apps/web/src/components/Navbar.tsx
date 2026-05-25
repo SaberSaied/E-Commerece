@@ -9,7 +9,7 @@ const Navbar = () => {
   const [smallMenu, setSmallMenu] = useState(false);
 
   const firstLinks = [
-    { name: 'Collections', href: '#collection' },
+    { name: 'Collections', href: '#collections' },
     { name: 'Atelier', href: '#atelier' },
     { name: 'Archive', href: '#archive' },
     { name: 'About', href: '#about' },
@@ -38,12 +38,12 @@ const Navbar = () => {
       </ul>
 
       <div className='fixed lg:left-1/2 transform lg:-translate-x-1/2 transition-transform duration-300 hover:scale-105'>
-        <Link onClick={() => {setIsActive(''); setSmallMenu(false); }} to='/' className='text-3xl tracking-wider'>ELYSIA</Link>
+        <Link onClick={() => {setIsActive(''); setSmallMenu(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }} to='/' className='text-3xl tracking-wider'>ELYSIA</Link>
       </div>
 
       <Icons.Menu size={16} className='lg:hidden cursor-pointer absolute right-4' onClick={() => setSmallMenu(!smallMenu)} />
       
-      <ul className='flex gap-4 items-center justify-end w-full'>
+      <ul className='flex gap-8 items-center justify-end w-full'>
         {secondLinks.map((link) => {
 
         const LucideIcon = Icons[link.name as keyof typeof Icons] as LucideIcon;
