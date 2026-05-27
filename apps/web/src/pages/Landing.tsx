@@ -1,11 +1,13 @@
-import Hero from "@/components/Hero"
-import Products from "@/components/Collections"
+import { Categories, Collections, Hero, Story } from "@/components"
+
 
 const Landing = () => {
   return (
     <>
       <Hero />
-      <Products />
+      <Collections />
+      <Story />
+      <Categories />
     </>
   )
 }

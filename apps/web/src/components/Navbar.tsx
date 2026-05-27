@@ -10,8 +10,8 @@ const Navbar = () => {
 
   const firstLinks = [
     { name: 'Collections', href: '#collections' },
-    { name: 'Atelier', href: '#atelier' },
-    { name: 'Archive', href: '#archive' },
+    { name: 'Atelier', href: '#story' },
+    { name: 'Archive', href: '#categories' },
     { name: 'About', href: '#about' },
   ]
 

@@ -7,7 +7,7 @@ const Collections = () => {
 
   const collections = [
     { name: 'The Obsidian Trench', image: collection1, category: 'OUTERWEAR', price: 2450 },
-    { name: 'Ivory Silk Drape', image: collection2, category: 'READY TO WEAR', price: 1535 },
+    { name: 'Ivory Silk Drape', image: collection2, category: 'READY TO WEAR', price: 1120 },
   ]
 
   return (

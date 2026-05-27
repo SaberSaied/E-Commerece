@@ -1,0 +1,7 @@
+export {default as Hero} from "./Hero"
+export {default as Collections} from "./Collections"
+export {default as Story} from "./Story"
+export {default as Categories} from "./Categories"
+export {default as Video} from "./Video"
+export {default as About} from "./About"
+export {default as Footer} from "./Footer"
