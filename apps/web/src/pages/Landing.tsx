@@ -1,4 +1,4 @@
-import { Categories, Collections, Hero, Story } from "@/components"
+import { About, Categories, Collections, Footer, Hero, Story, Video } from "@/components"
 
 
 const Landing = () => {
@@ -8,6 +8,9 @@ const Landing = () => {
       <Collections />
       <Story />
       <Categories />
+      <Video />
+      <About />
+      <Footer />
     </>
   )
 }
